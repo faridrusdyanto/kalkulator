@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+    crossorigin="anonymous">
+  <title>Document</title>
+  <script>
+    function tambah(){
+    var a,b,c,d; 
+    a=Number(document.getElementById("first").value); 
+    b=Number(document.getElementById("second").value); 
+    c=Number(document.getElementById("third").value); 
+    d = a + b + c;
+    document.getElementById("answer").value= d;
+    }
+
+    function kurang(){
+    var a,b,c,d; 
+    a=Number(document.getElementById("first").value); 
+    b=Number(document.getElementById("second").value); 
+    c=Number(document.getElementById("third").value); 
+    d = a - b - c;
+    document.getElementById("answer").value= d;
+    }
+
+    function kali(){
+    var a,b,c,d; 
+    a=Number(document.getElementById("first").value); 
+    b=Number(document.getElementById("second").value); 
+    c=Number(document.getElementById("third").value); 
+    d = a * b * c;
+    document.getElementById("answer").value= d;
+    }
+
+    function bagi(){
+    var a,b,c,d; 
+    a=Number(document.getElementById("first").value); 
+    b=Number(document.getElementById("second").value); 
+    c=Number(document.getElementById("third").value); 
+    d = a / b / c;
+    document.getElementById("answer").value= d;
+    }
+  </script>
+</head>
+<body>
+  <div align="center" style="padding-top: 100px;">
+    <div class="container">
+      <div class="form-group">
+        <input type="number" id="first"> 
+        <input type="checkbox" >
+      </div> <br>
+      <div class="form-group">
+        <input type="number" id="second"> 
+        <input type="checkbox" >
+      </div> <br>
+      <div class="form-group">
+        <input type="number" id="third"> 
+        <input type="checkbox" >
+      </div> <br>
+      <button type="button" class="btn btn-outline-secondary" onClick="tambah()">+</button> 
+      <button type="button" class="btn btn-outline-secondary" onClick="kurang()">-</button> 
+      <button type="button" class="btn btn-outline-secondary" onClick="kali()">x</button> 
+      <button type="button" class="btn btn-outline-secondary" onClick="bagi()">/</button> 
+      <hr/>
+      <div>
+        Hasil <input  style="border: none; text-align: right;" id="answer">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
